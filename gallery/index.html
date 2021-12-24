@@ -13,7 +13,45 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h2>gallery project</h2>
+    <!-- Nature images -->
+    <section class="section nature">
+        <img src="./images/nature-1.jpeg" title="nature-1" class="img" data-id="1" alt="nature image">
+        <img src="./images/nature-2.jpeg" title="nature-2" class="img" data-id="2" alt="nature image">
+        <img src="./images/nature-3.jpeg" title="nature-3" class="img" data-id="3" alt="nature image">
+    </section>
+
+    <!-- city images -->
+    <section class="section city">
+        <img src="images/city-1.jpeg" title="city-1" class="img" data-id="1" alt="city image">
+        <img src="images/city-2.jpeg" title="city-2" class="img" data-id="2" alt="city image">
+        <img src="images/city-3.jpeg" title="city-3" class="img" data-id="3" alt="city image">
+        <img src="images/city-4.jpeg" title="city-4" class="img" data-id="4" alt="city image">
+        <img src="images/city-5.jpeg" title="city-5" class="img" data-id="5" alt="city image">
+    </section>
+
+    <!-- modal images. class 'open' shows modal in page -->
+    <div class="modal">
+        <button class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <!-- prev - next buttons -->
+        <div class="modal-content">
+            <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <!-- image showed in modal, main-img class ot show image -->
+            <img src="images/nature-1.jpeg" class="main-img" alt="">
+            <h3 class="image-name">Image name</h3>
+            <!-- Small images blow the big picture -->
+            <div class="modal-images">
+                <img src="./images/nature-2.jpeg" class=" modal-img" alt="">
+                <img src="./images/city-2.jpeg" class=" modal-img selected" alt="">
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
