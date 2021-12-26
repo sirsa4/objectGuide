@@ -121,7 +121,7 @@ this.setMainShownImage(next);
 //preview button function. works similr to next button
 Gallery.prototype.prevImage = function(){
   //selected variable
-  const selected = this.modalImages.querySelector('selected');
+  const selected = this.modalImages.querySelector('.selected');
   const prev = selected.previousElementSibling || this.modalImages.lastElementChild;
   selected.classList.remove('selected');
   prev.classList.add('selected');
